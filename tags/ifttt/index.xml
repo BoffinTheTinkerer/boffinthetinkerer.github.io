@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IFTTT on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/ifttt/</link>
+    <description>Recent content in IFTTT on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 13 May 2023 11:03:24 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/ifttt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastodon / IFTTT Bot</title>
+      <link>https://boffinthetinkerer.github.io/posts/mastodon-ifttt-bot/</link>
+      <pubDate>Sat, 13 May 2023 11:03:24 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/mastodon-ifttt-bot/</guid>
+      <description>Twitter bots were fun while they lasted but Mastodon bots can be informative and fun too.</description>
+    </item>
+  </channel>
+</rss>

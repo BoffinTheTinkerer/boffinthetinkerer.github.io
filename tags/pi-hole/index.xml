@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pi-Hole on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/pi-hole/</link>
+    <description>Recent content in Pi-Hole on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 07 Oct 2023 17:48:02 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/pi-hole/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pi-hole with Unbound and PiVPN</title>
+      <link>https://boffinthetinkerer.github.io/posts/pi-hole-with-unbound-and-pivpn/</link>
+      <pubDate>Sat, 07 Oct 2023 17:48:02 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/pi-hole-with-unbound-and-pivpn/</guid>
+      <description>Install Pi-hole as a DNS sinkhole to block ads and trackers, Unbound as a recursive DNS resolver and PiVPN.</description>
+    </item>
+  </channel>
+</rss>

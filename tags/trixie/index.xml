@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Trixie on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/trixie/</link>
+    <description>Recent content in Trixie on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 02 Nov 2025 17:19:10 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/trixie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Debian Trixie on a Raspberry Pi</title>
+      <link>https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/</guid>
+      <description>Configuring Debian Trixie on a Raspberry Pi.</description>
+    </item>
+    <item>
+      <title>Installing Debian Trixie on a Raspberry Pi using pi-gen</title>
+      <link>https://boffinthetinkerer.github.io/posts/installing-debian-trixie-on-a-raspberry-pi-using-pi-gen/</link>
+      <pubDate>Sat, 01 Nov 2025 15:10:30 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/installing-debian-trixie-on-a-raspberry-pi-using-pi-gen/</guid>
+      <description>Installing Debian Trixie on a Raspberry Pi using pi-gen.</description>
+    </item>
+    <item>
+      <title>Configuring lighttpd TLS and ACME on a SheevaPlug</title>
+      <link>https://boffinthetinkerer.github.io/posts/configuring-lighttpd-tls-and-acme-on-a-sheevaplug/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/configuring-lighttpd-tls-and-acme-on-a-sheevaplug/</guid>
+      <description>Configuring lighttpd on a SheevaPlug.</description>
+    </item>
+    <item>
+      <title>Installing lighttpd on a SheevaPlug Running OpenWrt</title>
+      <link>https://boffinthetinkerer.github.io/posts/installing-lighttpd-on-a-sheevaplug-running-openwrt/</link>
+      <pubDate>Sun, 12 Oct 2025 16:51:18 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/installing-lighttpd-on-a-sheevaplug-running-openwrt/</guid>
+      <description>Installing lighttpd on a SheevaPlug Running OpenWrt.</description>
+    </item>
+    <item>
+      <title>Upgrading Debian Bookworm to Trixie on a SheevaPlug MMC</title>
+      <link>https://boffinthetinkerer.github.io/posts/upgrading-debian-bookworm-to-trixie-on-a-sheevaplug-mmc/</link>
+      <pubDate>Thu, 25 Sep 2025 07:40:58 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/upgrading-debian-bookworm-to-trixie-on-a-sheevaplug-mmc/</guid>
+      <description>Upgrading Debian Bookworm to Trixie on a SheevaPlug MMC.</description>
+    </item>
+  </channel>
+</rss>
