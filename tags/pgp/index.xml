@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PGP on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/pgp/</link>
+    <description>Recent content in PGP on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 16 Mar 2023 09:52:14 +0000</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/pgp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encryption Using PGP and Geany</title>
+      <link>https://boffinthetinkerer.github.io/posts/encryption-using-pgp-and-geany/</link>
+      <pubDate>Thu, 16 Mar 2023 09:52:14 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/encryption-using-pgp-and-geany/</guid>
+      <description>How to use the popular text editor to encrypt and decrypt a block of text.</description>
+    </item>
+  </channel>
+</rss>

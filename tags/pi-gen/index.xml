@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pi-Gen on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/pi-gen/</link>
+    <description>Recent content in Pi-Gen on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 01 Nov 2025 15:10:30 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/pi-gen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Debian Trixie on a Raspberry Pi using pi-gen</title>
+      <link>https://boffinthetinkerer.github.io/posts/installing-debian-trixie-on-a-raspberry-pi-using-pi-gen/</link>
+      <pubDate>Sat, 01 Nov 2025 15:10:30 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/installing-debian-trixie-on-a-raspberry-pi-using-pi-gen/</guid>
+      <description>Installing Debian Trixie on a Raspberry Pi using pi-gen.</description>
+    </item>
+  </channel>
+</rss>

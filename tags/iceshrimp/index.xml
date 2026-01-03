@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Iceshrimp on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/iceshrimp/</link>
+    <description>Recent content in Iceshrimp on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 30 Aug 2024 08:19:14 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/iceshrimp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iceshrimp.NET Grafana Dashboard</title>
+      <link>https://boffinthetinkerer.github.io/posts/iceshrimp-net-grafana-dashboard/</link>
+      <pubDate>Fri, 30 Aug 2024 08:19:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/iceshrimp-net-grafana-dashboard/</guid>
+      <description>Building an Iceshrimp.NET Grafana dashboard. Install Grafana, connect to the iceshrimp.NET database, build a metrics dashboard.</description>
+    </item>
+    <item>
+      <title>Iceshrimp.NET RSS Bot</title>
+      <link>https://boffinthetinkerer.github.io/posts/iceshrimp-net-rss-bot/</link>
+      <pubDate>Tue, 16 Jul 2024 07:34:36 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/iceshrimp-net-rss-bot/</guid>
+      <description>Turn an RSS feed into an Iceshrimp note. Send either the latest RSS entry or a stream of Iceshrimp posts.</description>
+    </item>
+    <item>
+      <title>Installing Iceshrimp.NET</title>
+      <link>https://boffinthetinkerer.github.io/posts/installing-iceshrimp-net/</link>
+      <pubDate>Sun, 28 Apr 2024 13:17:30 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/installing-iceshrimp-net/</guid>
+      <description>How I moved from IceshrimpJS to Iceshrimp.NET, a guide to migrating the database and installing.</description>
+    </item>
+    <item>
+      <title>Updating the Iceshrimp Blocklist</title>
+      <link>https://boffinthetinkerer.github.io/posts/updating-the-iceshrimp-blocklist/</link>
+      <pubDate>Sun, 14 Jan 2024 08:48:04 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/updating-the-iceshrimp-blocklist/</guid>
+      <description>Right now updating the blocklists is a manual process, this is a way of updating the Iceshrimp blocklist automatically using Python and cron.</description>
+    </item>
+    <item>
+      <title>Iceshrimp Backup and Restore</title>
+      <link>https://boffinthetinkerer.github.io/posts/iceshrimp-backup-and-restore/</link>
+      <pubDate>Wed, 13 Sep 2023 08:10:21 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/iceshrimp-backup-and-restore/</guid>
+      <description>Scripts and cron jobs to backup and restore the Iceshrimp database and Iceshrimp files.</description>
+    </item>
+    <item>
+      <title>Installing Iceshrimp</title>
+      <link>https://boffinthetinkerer.github.io/posts/installing-iceshrimp/</link>
+      <pubDate>Fri, 25 Aug 2023 08:10:29 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/installing-iceshrimp/</guid>
+      <description>How I installed and finally settled on Iceshrimp as my Fediverse software of choice, a full bare-metal guide.</description>
+    </item>
+  </channel>
+</rss>

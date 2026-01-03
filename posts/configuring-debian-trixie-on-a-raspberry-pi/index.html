@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Configuring Debian Trixie on a Raspberry Pi | Boffin The Tinkerer</title>
+<meta name="keywords" content="Debian, Hardware, Linux, nginx, Raspberry Pi, Self Hosting, Software, Trixie">
+<meta name="description" content="Configuring Debian Trixie on a Raspberry Pi.">
+<meta name="author" content="Boffin">
+<link rel="canonical" href="https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f35e6fe80238397ab63d6fa4b06117d6a47c4a51aaa2b16408b94d31729783b7.css" integrity="sha256-815v6AI4OXq2PW&#43;ksGEX1qR8SlGqorFkCLlNMXKXg7c=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://boffinthetinkerer.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://boffinthetinkerer.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://boffinthetinkerer.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://boffinthetinkerer.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://boffinthetinkerer.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/">
+  <meta property="og:site_name" content="Boffin The Tinkerer">
+  <meta property="og:title" content="Configuring Debian Trixie on a Raspberry Pi">
+  <meta property="og:description" content="Configuring Debian Trixie on a Raspberry Pi.">
+  <meta property="og:locale" content="en-gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-02T17:19:10+01:00">
+    <meta property="article:modified_time" content="2025-11-02T17:19:10+01:00">
+    <meta property="article:tag" content="Debian">
+    <meta property="article:tag" content="Hardware">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Nginx">
+    <meta property="article:tag" content="Raspberry Pi">
+    <meta property="article:tag" content="Self Hosting">
+    <meta property="og:image" content="https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/01_Debian_Trixie_Neofetch.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/01_Debian_Trixie_Neofetch.webp">
+<meta name="twitter:title" content="Configuring Debian Trixie on a Raspberry Pi">
+<meta name="twitter:description" content="Configuring Debian Trixie on a Raspberry Pi.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://boffinthetinkerer.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Configuring Debian Trixie on a Raspberry Pi",
+      "item": "https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Configuring Debian Trixie on a Raspberry Pi",
+  "name": "Configuring Debian Trixie on a Raspberry Pi",
+  "description": "Configuring Debian Trixie on a Raspberry Pi.",
+  "keywords": [
+    "Debian", "Hardware", "Linux", "nginx", "Raspberry Pi", "Self Hosting", "Software", "Trixie"
+  ],
+  "articleBody": "Things to be aware of https://www.debian.org/releases/trixie/release-notes/issues.en.html Issues that I came across whilst reinstalling / upgrading to Trixie:\nEncrypted drive issues Trixie needs:\nsudo apt install systemd-cryptsetup\nAlong with the usual:\nsudo apt install cryptsetup\nFor encrypted drives to mount on reboot correctly.\nhttps://lists.debian.org/debian-devel/2025/07/msg00019.html Write I used the Raspberry Pi Imager to install from file:\nPlug in the Argon One base using the USB-A to USB-A cable\nInstall to SSD\nThat’s it.\nConnect and update Find the IP:\nsudo nmap -sn /24\nLogin using SSH.\nFor Security Regenerate the SSH Keys:\nsudo ssh-keygen -q -f /etc/ssh/ssh_host_key -N '' -t rsa sudo ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa I always add an update alias:\nsudo nano .bashrc\n# Add an update alias alias update=\"sudo apt update -y \u0026\u0026 sudo apt upgrade -y \u0026\u0026 sudo apt remove -y \u0026\u0026 sudo apt clean -y \u0026\u0026 sudo apt autoremove \u0026\u0026 sudo apt autoclean -y\" source ~/.bashrc\nupdate\nReboot as necessary\nFan Install:\ncurl https://download.argon40.com/argon1.sh | bash\nThen:\nargon-config\nOr:\nsudo nano /etc/argononed.conf\nAdd my own thermal profile for when the fan activates and at what speed:\n# Start below: 35=25 40=50 45=75 50=100 sudo systemctl enable argononed.service\nsudo systemctl start argononed.service\nsudo systemctl status argononed.service\nApplications sudo apt install btop\nsudo apt install mc\nFixed IP and Hostname Create a Fixed IP and Change the Hostname:\nsudo nmtui\nsudo reboot\nSSH On the Pi:\ninstall -d -m 700 ~/.ssh\nPaste the key into:\nnano ~/.ssh/authorized_keys\nsudo reboot\nDisable password logins on server:\nsudo nano /etc/ssh/sshd_config\nChange:\nInclude /etc/ssh/sshd_config.d/*.conf\nTo:\n#Include /etc/ssh/sshd_config.d/*.conf\nChange:\n#PermitRootLogin prohibit-password\nTo:\nPermitRootLogin no\nChange:\n#PubkeyAuthentication yes\nTo:\nPubkeyAuthentication yes\nChange:\n#AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2\nTo:\nAuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2\nChange:\n#PasswordAuthentication yes\nTo:\nPasswordAuthentication no\nFinally:\nsudo systemctl restart ssh\nCheck:\nssh NAME@\nOr:\nssh Should fail with:\nPermission denied (publickey).\nHardening At this point the Pi is only going to be a Jellyfin server.\nBehind a router that only has the web traffic ports open.\n(The web traffic is sent to the SheevaPlug which is acting as the web server.)\nSo, in theory there is no need for a firewall or traffic throttling.\nHowever I know how my brain works and at some point the web traffic is going to be served from this Pi.\nSo I might as well install and configure some applications now.\n(There are zero downsides to doing this now.)\nUFW sudo apt install ufw\nsudo nano /etc/default/ufw\nChange:\nIPV6=yes\nTo:\nIPV6=no\nsudo ufw default deny incoming\nsudo ufw default allow outgoing\nAllow access to OpenSSH from LAN only:\nsudo ufw allow from 192.168.0.0/24 to any port 22 comment \"SSH traffic from LAN only\"\nsudo ufw enable\nsudo ufw status verbose\nfail2ban sudo apt install fail2ban\ncd /etc/fail2ban\nsudo cp jail.conf jail.local\nsudo nano jail.local\nChange [sshd] to:\n#mode = normal #port = ssh #logpath = %(sshd_log)s #backend = %(sshd_backend)s # Changed by me mode = aggressive port = ssh logpath = %(sshd_log)s backend = systemd Change [nginx-http-auth] to:\n[nginx-http-auth] # Changed by me # mode = normal mode = aggressive port = http,https logpath = %(nginx_error_log)s Append:\n################ ### Added by me ################ # To whitelist local network: ignoreip = 192.168.0.0/24 # Create a custom jail for nginx 404s # From # https://dev.to/ramer2b58cbe46bc8/security-hardening-for-nginx-tls-firewalls-and-fail2ban-basics-22ln [nginx-http-404] enabled = true filter = nginx-http-404 logpath = /var/log/nginx/site_1_access.log /var/log/nginx/site_2_access.log maxretry = 5 findtime = 600 bantime = 3600 Add the filter:\nsudo nano /etc/fail2ban/filter.d/nginx-http-404.conf\n[Definition] failregex = ^ -.*\"GET .*\" 404 ignoreregex = Enable:\nsudo systemctl enable fail2ban\nStart:\nsudo systemctl start fail2ban\nStatus:\nsudo systemctl status fail2ban\nClient status:\nsudo fail2ban-client status\nMount the LUKS encrypted drives Install cryptsetup:\nsudo apt install cryptsetup\nsudo apt install systemd-cryptsetup\nAdd a mount point(s):\nsudo mkdir /mnt/\nsudo mkdir /media/\nFind the UUID:\nls -l /dev/disk/by-uuid/\nCreate a key file:\nsudo nano /root/.key\nPaste in the password.\nSet permissions:\nsudo chmod 400 /root/.key\nCheck it is there:\nsudo mc\nSet up LUKS:\nsudo cryptsetup luksAddKey UUID= /root/.key\nPrompts to ‘Enter any existing passphrase:’\nThis is the password.\n(A few tense seconds will pass whilst you wait, wondering if this will work.)\nEdit /etc/crypttab manually:\nsudo nano /etc/crypttab\n# UUID= /root/.key luks Update the initial ramdisk:\nsudo update-initramfs -u -k all\nTest:\nsudo cryptdisks_start To check was mapped:\nls /dev/mapper/\nNew entry in /etc/fstab:\nsudo nano /etc/fstab\nAdd:\n# Mount the encrypted drive # nofail to prevent hanging on boot if for some reason not unlocked /dev/mapper/ /mnt/ ext4 defaults,nofail 0 2 Reload:\nsudo systemctl daemon-reload\nValidate fstab without reboot:\nsudo mount -a\nCheck the Mounts:\nsudo mount --bind /mnt// /media//\nReboot to check that is mounted.\nJellyfin Install:\nhttps://jellyfin.org/docs/general/installation/linux/ curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash\nAdd UFW Rule Allow access to Jellyfin from LAN only:\nsudo ufw allow from 192.168.0.0/24 to any port 8096 comment \"Jellyfin traffic from LAN only\"\nRestore https://jellyfin.org/docs/general/administration/backup-and-restore/ sudo systemctl stop jellyfin\nsudo systemctl status jellyfin\nsudo mv /var/lib/jellyfin /var/lib/jellyfin.bak\nsudo mv /etc/jellyfin /etc/jellyfin.bak\nReplace with the backup:\nsudo cp -a /WHEREVER/JELLYFIN_BACKUPS/jellyfin.DATE_VERSION/data /var/lib/jellyfin\nsudo cp -a /WHEREVER/JELLYFIN_BACKUPS/jellyfin.DATE_VERSION/config /etc/jellyfin\nTake ownership:\nsudo chown -R jellyfin: /var/lib/jellyfin /etc/jellyfin\nStart and check:\nsudo systemctl start jellyfin\nsudo systemctl status jellyfin\nTidy up:\nsudo rm -R /var/lib/jellyfin.bak\nsudo rm -R /etc/jellyfin /etc/jellyfin.bak\nNotes There are now backup / restore scripts\nJellyfin Backup and Restore backup_jellyfin restore_jellyfin May need to examine ownership of files and folders:\ncd sudo chown -R $USER$:$USER$ *\nchmod 755 -R *\nHardware acceleration:\nhttps://pimylifeup.com/raspberry-pi-jellyfin/ sudo usermod -aG video jellyfin\nDashboard | Playback | Transcoding | Hardware acceleration | Video4Linux2(V4L2)\nsudo reboot\nmotd Disable current /etc/motd by backing it up:\nsudo mv /etc/motd /etc/motd.backup\nDisable current /update-motd.d/10-uname by backing it up:\nsudo mv /etc/update-motd.d/10-uname /etc/update-motd.d/10-uname.backup\nRemove the ‘Last login:’ message:\nsudo nano /etc/ssh/sshd_config\nChange:\n#PrintLastLog yes\nTo:\nPrintLastLog no\nsudo systemctl restart sshd\nInstall screenfetch:\nsudo apt install screenfetch\nAdd screenfetch to .bashrc:\nnano .bashrc\n# Show screenfetch on login echo \"\"; screenfetch Lose the ‘Wi-Fi is currently blocked by rfkill’ message:\nsudo raspi-config\nThen:\n5 Localisation Options\nL4. WLAN Country\nMore to be added ? Not at this point in time.\nBut probably in the future.\n",
+  "wordCount" : "1024",
+  "inLanguage": "en",
+  "image":"https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/01_Debian_Trixie_Neofetch.webp","datePublished": "2025-11-02T17:19:10+01:00",
+  "dateModified": "2025-11-02T17:19:10+01:00",
+  "author":{
+    "@type": "Person",
+    "name": "Boffin"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://boffinthetinkerer.github.io/posts/configuring-debian-trixie-on-a-raspberry-pi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Boffin The Tinkerer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://boffinthetinkerer.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://boffinthetinkerer.github.io/" accesskey="h" title="Boffin The Tinkerer (Alt + H)">Boffin The Tinkerer</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://boffinthetinkerer.github.io/categories/featured/" title="Featured">
+                    <span>Featured</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://boffinthetinkerer.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://boffinthetinkerer.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://boffinthetinkerer.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://boffinthetinkerer.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://boffinthetinkerer.github.io/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Configuring Debian Trixie on a Raspberry Pi
+    </h1>
+    <div class="post-meta"><span title='2025-11-02 17:19:10 +0100 +0100'>November 2, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Boffin</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#things-to-be-aware-of" aria-label="Things to be aware of">Things to be aware of</a><ul>
+                        
+                <li>
+                    <a href="#encrypted-drive-issues" aria-label="Encrypted drive issues">Encrypted drive issues</a></li></ul>
+                </li>
+                <li>
+                    <a href="#write" aria-label="Write">Write</a></li>
+                <li>
+                    <a href="#connect-and-update" aria-label="Connect and update">Connect and update</a></li>
+                <li>
+                    <a href="#fan" aria-label="Fan">Fan</a></li>
+                <li>
+                    <a href="#applications" aria-label="Applications">Applications</a></li>
+                <li>
+                    <a href="#fixed-ip-and-hostname" aria-label="Fixed IP and Hostname">Fixed IP and Hostname</a></li>
+                <li>
+                    <a href="#ssh" aria-label="SSH">SSH</a></li>
+                <li>
+                    <a href="#hardening" aria-label="Hardening">Hardening</a><ul>
+                        
+                <li>
+                    <a href="#ufw" aria-label="UFW">UFW</a></li>
+                <li>
+                    <a href="#fail2ban" aria-label="fail2ban">fail2ban</a></li></ul>
+                </li>
+                <li>
+                    <a href="#mount-the-luks-encrypted-drives" aria-label="Mount the LUKS encrypted drives">Mount the LUKS encrypted drives</a></li>
+                <li>
+                    <a href="#jellyfin" aria-label="Jellyfin">Jellyfin</a><ul>
+                        
+                <li>
+                    <a href="#add-ufw-rule" aria-label="Add UFW Rule">Add UFW Rule</a></li>
+                <li>
+                    <a href="#restore" aria-label="Restore">Restore</a></li>
+                <li>
+                    <a href="#notes" aria-label="Notes">Notes</a></li></ul>
+                </li>
+                <li>
+                    <a href="#motd" aria-label="motd">motd</a></li>
+                <li>
+                    <a href="#more-to-be-added-" aria-label="More to be added ?">More to be added ?</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="things-to-be-aware-of">Things to be aware of<a hidden class="anchor" aria-hidden="true" href="#things-to-be-aware-of">#</a></h2>
+<p>
+
+
+<a href="https://www.debian.org/releases/trixie/release-notes/issues.en.html" target="_blank" rel="nofollow noopener noreferrer">https://www.debian.org/releases/trixie/release-notes/issues.en.html</a>
+</p>
+<p>Issues that <em><strong>I</strong></em> came across whilst reinstalling / upgrading to Trixie:</p>
+<h3 id="encrypted-drive-issues">Encrypted drive issues<a hidden class="anchor" aria-hidden="true" href="#encrypted-drive-issues">#</a></h3>
+<p>Trixie needs:</p>
+<p><code>sudo apt install systemd-cryptsetup</code></p>
+<p>Along with the usual:</p>
+<p><code>sudo apt install cryptsetup</code></p>
+<p>For encrypted drives to mount on reboot correctly.</p>
+<p>
+
+
+<a href="https://lists.debian.org/debian-devel/2025/07/msg00019.html" target="_blank" rel="nofollow noopener noreferrer">https://lists.debian.org/debian-devel/2025/07/msg00019.html</a>
+</p>
+<h2 id="write">Write<a hidden class="anchor" aria-hidden="true" href="#write">#</a></h2>
+<p>I used the Raspberry Pi Imager to install from file:</p>
+<ul>
+<li>
+<p>Plug in the Argon One base using the USB-A to USB-A cable</p>
+</li>
+<li>
+<p>Install to SSD</p>
+</li>
+</ul>
+<p>That&rsquo;s it.</p>
+<h2 id="connect-and-update">Connect and update<a hidden class="anchor" aria-hidden="true" href="#connect-and-update">#</a></h2>
+<p>Find the IP:</p>
+<p><code>sudo nmap -sn &lt;ROUTER_IP&gt;/24</code></p>
+<p>Login using SSH.</p>
+<p>For Security Regenerate the SSH Keys:</p>
+<pre tabindex="0"><code>sudo ssh-keygen -q -f /etc/ssh/ssh_host_key -N &#39;&#39; -t rsa
+sudo ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N &#39;&#39; -t rsa
+</code></pre><p>I always add an <code>update</code> alias:</p>
+<p><code>sudo nano .bashrc</code></p>
+<pre tabindex="0"><code># Add an update alias
+alias update=&#34;sudo apt update -y &amp;&amp; sudo apt upgrade -y &amp;&amp; sudo apt remove -y &amp;&amp; sudo apt clean -y &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt autoclean -y&#34;
+</code></pre><p><code>source ~/.bashrc</code></p>
+<p><code>update</code></p>
+<p>Reboot as necessary</p>
+<h2 id="fan">Fan<a hidden class="anchor" aria-hidden="true" href="#fan">#</a></h2>
+<p>Install:</p>
+<p><code>curl https://download.argon40.com/argon1.sh | bash</code></p>
+<p>Then:</p>
+<p><code>argon-config</code></p>
+<p>Or:</p>
+<p><code>sudo nano /etc/argononed.conf</code></p>
+<p>Add my own thermal profile for when the fan activates and at what speed:</p>
+<pre tabindex="0"><code># Start below:
+35=25
+40=50
+45=75
+50=100
+</code></pre><p><code>sudo systemctl enable argononed.service</code></p>
+<p><code>sudo systemctl start argononed.service</code></p>
+<p><code>sudo systemctl status argononed.service</code></p>
+<h2 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h2>
+<p><code>sudo apt install btop</code></p>
+<p><code>sudo apt install mc</code></p>
+<h2 id="fixed-ip-and-hostname">Fixed IP and Hostname<a hidden class="anchor" aria-hidden="true" href="#fixed-ip-and-hostname">#</a></h2>
+<p>Create a Fixed IP and Change the Hostname:</p>
+<p><code>sudo nmtui</code></p>
+<p><code>sudo reboot</code></p>
+<h2 id="ssh">SSH<a hidden class="anchor" aria-hidden="true" href="#ssh">#</a></h2>
+<p>On the Pi:</p>
+<p><code>install -d -m 700 ~/.ssh</code></p>
+<p>Paste the key into:</p>
+<p><code>nano ~/.ssh/authorized_keys</code></p>
+<p><code>sudo reboot</code></p>
+<p>Disable password logins on server:</p>
+<p><code>sudo nano /etc/ssh/sshd_config</code></p>
+<p>Change:</p>
+<p><code>Include /etc/ssh/sshd_config.d/*.conf</code></p>
+<p>To:</p>
+<p><code>#Include /etc/ssh/sshd_config.d/*.conf</code></p>
+<p>Change:</p>
+<p><code>#PermitRootLogin prohibit-password</code></p>
+<p>To:</p>
+<p><code>PermitRootLogin no</code></p>
+<p>Change:</p>
+<p><code>#PubkeyAuthentication yes</code></p>
+<p>To:</p>
+<p><code>PubkeyAuthentication yes</code></p>
+<p>Change:</p>
+<p><code>#AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2</code></p>
+<p>To:</p>
+<p><code>AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2</code></p>
+<p>Change:</p>
+<p><code>#PasswordAuthentication yes</code></p>
+<p>To:</p>
+<p><code>PasswordAuthentication no</code></p>
+<p>Finally:</p>
+<p><code>sudo systemctl restart ssh</code></p>
+<p>Check:</p>
+<p><code>ssh NAME@&lt;RASPI_IP&gt;</code></p>
+<p>Or:</p>
+<p><code>ssh &lt;RASPI_IP&gt;</code></p>
+<p>Should fail with:</p>
+<p><strong>Permission denied (publickey).</strong></p>
+<h2 id="hardening">Hardening<a hidden class="anchor" aria-hidden="true" href="#hardening">#</a></h2>
+<p>At this point the Pi is only going to be a Jellyfin server.</p>
+<p>Behind a router that only has the web traffic ports open.</p>
+<p>(The web traffic is sent to the SheevaPlug which is acting as the web server.)</p>
+<p>So, in theory there is no need for a firewall or traffic throttling.</p>
+<p>However I know how my brain works and at some point the web traffic is going to be served from this Pi.</p>
+<p>So I might as well install and configure some applications now.</p>
+<p>(There are zero downsides to doing this now.)</p>
+<h3 id="ufw">UFW<a hidden class="anchor" aria-hidden="true" href="#ufw">#</a></h3>
+<p><code>sudo apt install ufw</code></p>
+<p><code>sudo nano /etc/default/ufw</code></p>
+<p>Change:</p>
+<p><code>IPV6=yes</code></p>
+<p>To:</p>
+<p><code>IPV6=no</code></p>
+<p><code>sudo ufw default deny incoming</code></p>
+<p><code>sudo ufw default allow outgoing</code></p>
+<p>Allow access to OpenSSH from LAN only:</p>
+<p><code>sudo ufw allow from 192.168.0.0/24 to any port 22 comment &quot;SSH traffic from LAN only&quot;</code></p>
+<p><code>sudo ufw enable</code></p>
+<p><code>sudo ufw status verbose</code></p>
+<h3 id="fail2ban">fail2ban<a hidden class="anchor" aria-hidden="true" href="#fail2ban">#</a></h3>
+<p><code>sudo apt install fail2ban</code></p>
+<p><code>cd /etc/fail2ban</code></p>
+<p><code>sudo cp jail.conf jail.local</code></p>
+<p><code>sudo nano jail.local</code></p>
+<p>Change [sshd] to:</p>
+<pre tabindex="0"><code>#mode   = normal
+#port    = ssh
+#logpath = %(sshd_log)s
+#backend = %(sshd_backend)s
+# Changed by me
+mode    = aggressive
+port    = ssh
+logpath = %(sshd_log)s
+backend = systemd
+</code></pre><p>Change [nginx-http-auth] to:</p>
+<pre tabindex="0"><code>[nginx-http-auth]
+# Changed by me
+# mode = normal
+mode = aggressive
+port = http,https
+logpath = %(nginx_error_log)s
+</code></pre><p>Append:</p>
+<pre tabindex="0"><code>################
+### Added by me
+################
+# To whitelist local network:
+ignoreip = 192.168.0.0/24
+
+# Create a custom jail for nginx 404s
+# From
+# https://dev.to/ramer2b58cbe46bc8/security-hardening-for-nginx-tls-firewalls-and-fail2ban-basics-22ln
+[nginx-http-404]
+enabled = true
+filter = nginx-http-404
+logpath =   /var/log/nginx/site_1_access.log
+            /var/log/nginx/site_2_access.log
+maxretry = 5
+findtime = 600
+bantime = 3600
+</code></pre><p>Add the filter:</p>
+<p><code>sudo nano /etc/fail2ban/filter.d/nginx-http-404.conf</code></p>
+<pre tabindex="0"><code>[Definition]
+failregex = ^&lt;HOST&gt; -.*&#34;GET .*&#34; 404
+ignoreregex =
+</code></pre><p>Enable:</p>
+<p><code>sudo systemctl enable fail2ban</code></p>
+<p>Start:</p>
+<p><code>sudo systemctl start fail2ban</code></p>
+<p>Status:</p>
+<p><code>sudo systemctl status fail2ban</code></p>
+<p>Client status:</p>
+<p><code>sudo fail2ban-client status</code></p>
+<h2 id="mount-the-luks-encrypted-drives">Mount the LUKS encrypted drives<a hidden class="anchor" aria-hidden="true" href="#mount-the-luks-encrypted-drives">#</a></h2>
+<p>Install cryptsetup:</p>
+<p><code>sudo apt install cryptsetup</code></p>
+<p><code>sudo apt install systemd-cryptsetup</code></p>
+<p>Add a mount point(s):</p>
+<p><code>sudo mkdir /mnt/&lt;EXTERNAL_DRIVE_NAME&gt;</code></p>
+<p><code>sudo mkdir /media/&lt;EXTERNAL_DRIVE_NAME&gt;</code></p>
+<p>Find the UUID:</p>
+<p><code>ls -l /dev/disk/by-uuid/</code></p>
+<p>Create a &lt;EXTERNAL_DRIVE_NAME&gt; key file:</p>
+<p><code>sudo nano /root/&lt;EXTERNAL_DRIVE_NAME&gt;.key</code></p>
+<p>Paste in the &lt;EXTERNAL_DRIVE_NAME&gt; password.</p>
+<p>Set permissions:</p>
+<p><code>sudo chmod 400 /root/&lt;EXTERNAL_DRIVE_NAME&gt;.key</code></p>
+<p>Check it is there:</p>
+<p><code>sudo mc</code></p>
+<p>Set up LUKS:</p>
+<p><code>sudo cryptsetup  luksAddKey  UUID=&lt;BIG_LONG_STRING&gt;   /root/&lt;EXTERNAL_DRIVE_NAME&gt;.key</code></p>
+<p>Prompts to &lsquo;Enter any existing passphrase:&rsquo;</p>
+<p>This is the &lt;EXTERNAL_DRIVE_NAME&gt; password.</p>
+<p>(A few tense seconds will pass whilst you wait, wondering if this will work.)</p>
+<p>Edit /etc/crypttab manually:</p>
+<p><code>sudo nano /etc/crypttab</code></p>
+<pre tabindex="0"><code># &lt;target name&gt; &lt;source device&gt;         &lt;key file&gt;      &lt;options&gt;
+&lt;EXTERNAL_DRIVE_NAME&gt; UUID=&lt;BIG_LONG_STRING&gt;   /root/&lt;EXTERNAL_DRIVE_NAME&gt;.key   luks
+</code></pre><p>Update the initial ramdisk:</p>
+<p><code>sudo update-initramfs -u -k all</code></p>
+<p>Test:</p>
+<p><code>sudo cryptdisks_start &lt;EXTERNAL_DRIVE_NAME&gt;</code></p>
+<p>To check &lt;EXTERNAL_DRIVE_NAME&gt; was mapped:</p>
+<p><code>ls /dev/mapper/</code></p>
+<p>New entry in /etc/fstab:</p>
+<p><code>sudo nano /etc/fstab</code></p>
+<p>Add:</p>
+<pre tabindex="0"><code># Mount the encrypted &lt;EXTERNAL_DRIVE_NAME&gt; drive
+# nofail to prevent hanging on boot if for some reason not unlocked
+/dev/mapper/&lt;EXTERNAL_DRIVE_NAME&gt; /mnt/&lt;EXTERNAL_DRIVE_NAME&gt; ext4 defaults,nofail 0 2
+</code></pre><p>Reload:</p>
+<p><code>sudo systemctl daemon-reload</code></p>
+<p>Validate fstab without reboot:</p>
+<p><code>sudo mount -a</code></p>
+<p>Check the &lt;EXTERNAL_DRIVE_NAME&gt; Mounts:</p>
+<p><code>sudo mount --bind /mnt/&lt;EXTERNAL_DRIVE_NAME&gt;/ /media/&lt;EXTERNAL_DRIVE_NAME&gt;/</code></p>
+<p>Reboot to check that &lt;EXTERNAL_DRIVE_NAME&gt; is mounted.</p>
+<h2 id="jellyfin">Jellyfin<a hidden class="anchor" aria-hidden="true" href="#jellyfin">#</a></h2>
+<p>Install:</p>
+<p>
+
+
+<a href="https://jellyfin.org/docs/general/installation/linux/" target="_blank" rel="nofollow noopener noreferrer">https://jellyfin.org/docs/general/installation/linux/</a>
+</p>
+<p><code>curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash</code></p>
+<h3 id="add-ufw-rule">Add UFW Rule<a hidden class="anchor" aria-hidden="true" href="#add-ufw-rule">#</a></h3>
+<p>Allow access to Jellyfin from LAN only:</p>
+<p><code>sudo ufw allow from 192.168.0.0/24 to any port 8096 comment &quot;Jellyfin traffic from LAN only&quot;</code></p>
+<h3 id="restore">Restore<a hidden class="anchor" aria-hidden="true" href="#restore">#</a></h3>
+<p>
+
+
+<a href="https://jellyfin.org/docs/general/administration/backup-and-restore/" target="_blank" rel="nofollow noopener noreferrer">https://jellyfin.org/docs/general/administration/backup-and-restore/</a>
+</p>
+<p><code>sudo systemctl stop jellyfin</code></p>
+<p><code>sudo systemctl status jellyfin</code></p>
+<p><code>sudo mv /var/lib/jellyfin /var/lib/jellyfin.bak</code></p>
+<p><code>sudo mv /etc/jellyfin /etc/jellyfin.bak</code></p>
+<p>Replace with the backup:</p>
+<p><code>sudo cp -a /WHEREVER/JELLYFIN_BACKUPS/jellyfin.DATE_VERSION/data /var/lib/jellyfin</code></p>
+<p><code>sudo cp -a /WHEREVER/JELLYFIN_BACKUPS/jellyfin.DATE_VERSION/config /etc/jellyfin</code></p>
+<p>Take ownership:</p>
+<p><code>sudo chown -R jellyfin: /var/lib/jellyfin /etc/jellyfin</code></p>
+<p>Start and check:</p>
+<p><code>sudo systemctl start jellyfin</code></p>
+<p><code>sudo systemctl status jellyfin</code></p>
+<p>Tidy up:</p>
+<p><code>sudo rm -R /var/lib/jellyfin.bak</code></p>
+<p><code>sudo rm -R /etc/jellyfin /etc/jellyfin.bak</code></p>
+<h3 id="notes">Notes<a hidden class="anchor" aria-hidden="true" href="#notes">#</a></h3>
+<p><strong>There are now backup / restore scripts</strong></p>
+<p>
+
+
+
+  <a href="/posts/jellyfin-backup-and-restore">Jellyfin Backup and Restore</a>
+</p>
+<p>
+
+
+<a href="https://github.com/BoffinTheTinkerer/Jellyfin/blob/main/backup/backup_jellyfin.sh" target="_blank" rel="nofollow noopener noreferrer">backup_jellyfin</a>
+</p>
+<p>
+
+
+<a href="https://github.com/BoffinTheTinkerer/Jellyfin/blob/main/restore/restore_jellyfin.sh" target="_blank" rel="nofollow noopener noreferrer">restore_jellyfin</a>
+</p>
+<p><strong>May need to examine ownership of files and folders:</strong></p>
+<p><code>cd &lt;EXTERNAL_DRIVE_NAME&gt;</code></p>
+<p><code>sudo chown -R $USER$:$USER$ *</code></p>
+<p><code>chmod 755 -R *</code></p>
+<p><strong>Hardware acceleration:</strong></p>
+<p>
+
+
+<a href="https://pimylifeup.com/raspberry-pi-jellyfin/" target="_blank" rel="nofollow noopener noreferrer">https://pimylifeup.com/raspberry-pi-jellyfin/</a>
+</p>
+<p><code>sudo usermod -aG video jellyfin</code></p>
+<p>Dashboard | Playback | Transcoding | Hardware acceleration | Video4Linux2(V4L2)</p>
+<p><code>sudo reboot</code></p>
+<h2 id="motd">motd<a hidden class="anchor" aria-hidden="true" href="#motd">#</a></h2>
+<p>Disable current <strong>/etc/motd</strong> by backing it up:</p>
+<p><code>sudo mv /etc/motd /etc/motd.backup</code></p>
+<p>Disable current <strong>/update-motd.d/10-uname</strong> by backing it up:</p>
+<p><code>sudo mv /etc/update-motd.d/10-uname /etc/update-motd.d/10-uname.backup</code></p>
+<p>Remove the <strong>&lsquo;Last login:&rsquo;</strong> message:</p>
+<p><code>sudo nano /etc/ssh/sshd_config</code></p>
+<p>Change:</p>
+<p><code>#PrintLastLog yes</code></p>
+<p>To:</p>
+<p><code>PrintLastLog no</code></p>
+<p><code>sudo systemctl restart sshd</code></p>
+<p>Install screenfetch:</p>
+<p><code>sudo apt install screenfetch</code></p>
+<p>Add screenfetch to .bashrc:</p>
+<p><code>nano .bashrc</code></p>
+<pre tabindex="0"><code># Show screenfetch on login
+echo &#34;&#34;;
+screenfetch
+</code></pre><p>Lose the &lsquo;Wi-Fi is currently blocked by rfkill&rsquo; message:</p>
+<p><code>sudo raspi-config</code></p>
+<p>Then:</p>
+<ul>
+<li>
+<p>5 Localisation Options</p>
+</li>
+<li>
+<p>L4. WLAN Country</p>
+</li>
+</ul>
+<h2 id="more-to-be-added-">More to be added ?<a hidden class="anchor" aria-hidden="true" href="#more-to-be-added-">#</a></h2>
+<p>Not at this point in time.</p>
+<p>But probably in the future.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://boffinthetinkerer.github.io/tags/debian/">Debian</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/hardware/">Hardware</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/linux/">Linux</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/nginx/">Nginx</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/raspberry-pi/">Raspberry Pi</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/self-hosting/">Self Hosting</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/software/">Software</a></li>
+      <li><a href="https://boffinthetinkerer.github.io/tags/trixie/">Trixie</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://boffinthetinkerer.github.io/posts/installing-debian-trixie-on-a-raspberry-pi-using-pi-gen/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Installing Debian Trixie on a Raspberry Pi using pi-gen</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://boffinthetinkerer.github.io/">Boffin The Tinkerer</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <br>
+        <p><a href="https://www.creativecommons.org/licenses/by-nc/4.0/deed.en" rel="noopener noreferrer" target="_blank">This work is licensed under CC BY-NC-SA 4.0</a></p>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

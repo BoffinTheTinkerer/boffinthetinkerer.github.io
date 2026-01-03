@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Featured on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/categories/featured/</link>
+    <description>Recent content in Featured on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 22 May 2025 07:40:58 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/categories/featured/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dumping Google</title>
+      <link>https://boffinthetinkerer.github.io/posts/dumping-google/</link>
+      <pubDate>Thu, 22 May 2025 07:40:58 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/dumping-google/</guid>
+      <description>The logical next step in simplifying my digital life.</description>
+    </item>
+    <item>
+      <title>Techno Luddites</title>
+      <link>https://boffinthetinkerer.github.io/posts/techno-luddites/</link>
+      <pubDate>Sat, 26 Apr 2025 22:12:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/techno-luddites/</guid>
+      <description>Becoming less dependant on tech or at least using it humanly and a few predictions.</description>
+    </item>
+    <item>
+      <title>Reducing My Digital Footprint</title>
+      <link>https://boffinthetinkerer.github.io/posts/reducing-my-digital-footprint/</link>
+      <pubDate>Sat, 15 Mar 2025 15:27:32 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/reducing-my-digital-footprint/</guid>
+      <description>Treading more lightly (digitally).</description>
+    </item>
+    <item>
+      <title>The Travelling Packet</title>
+      <link>https://boffinthetinkerer.github.io/posts/the-travelling-packet/</link>
+      <pubDate>Sun, 01 Dec 2024 11:09:39 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/the-travelling-packet/</guid>
+      <description>A very high level description of how information flows from a web server to a browser.</description>
+    </item>
+    <item>
+      <title>Moving to Hugo from WordPress</title>
+      <link>https://boffinthetinkerer.github.io/posts/moving-to-hugo-from-wordpress/</link>
+      <pubDate>Thu, 21 Nov 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/moving-to-hugo-from-wordpress/</guid>
+      <description>Why I spent an inordinate amount of time moving to the Hugo &amp;lsquo;Static Site Generator&amp;rsquo;.</description>
+    </item>
+    <item>
+      <title>OpenWrt with AdGuardHome and Unbound on a SheevaPlug</title>
+      <link>https://boffinthetinkerer.github.io/posts/openwrt-with-adguardhome-and-unbound-on-a-sheevaplug/</link>
+      <pubDate>Sat, 18 May 2024 17:36:40 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/openwrt-with-adguardhome-and-unbound-on-a-sheevaplug/</guid>
+      <description>Take some OpenWrt with a dash of AdGuardHome, add a splash of Unbound and install it all on a SheevaPlug; will it be a recipe for disaster?</description>
+    </item>
+    <item>
+      <title>Nanode</title>
+      <link>https://boffinthetinkerer.github.io/posts/nanode/</link>
+      <pubDate>Sat, 26 Aug 2023 07:31:15 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/nanode/</guid>
+      <description>Using an Arduino like Nanode board to present a simple web page.</description>
+    </item>
+    <item>
+      <title>Larson Scanner</title>
+      <link>https://boffinthetinkerer.github.io/posts/larson-scanner/</link>
+      <pubDate>Sat, 26 Mar 2022 11:08:01 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/larson-scanner/</guid>
+      <description>ScrewedSculpts asked if I could create this iconic effect but for a version of Maximilian that he was building.</description>
+    </item>
+    <item>
+      <title>Robot Pan / Tilt Hat CCTV</title>
+      <link>https://boffinthetinkerer.github.io/posts/robot-pan-tilt-hat-cctv/</link>
+      <pubDate>Fri, 25 Feb 2022 15:10:37 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/robot-pan-tilt-hat-cctv/</guid>
+      <description>An Internet controlled robot with a pan and tilt CCTV camera? What could go wrong?</description>
+    </item>
+    <item>
+      <title>Refurbishing a Picade</title>
+      <link>https://boffinthetinkerer.github.io/posts/refurbishing-a-picade/</link>
+      <pubDate>Tue, 30 Oct 2018 19:21:04 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/refurbishing-a-picade/</guid>
+      <description>Those of a nervous disposition should read no further.</description>
+    </item>
+    <item>
+      <title>GoogleAIY a RaspberryPi and a Scroll pHAT</title>
+      <link>https://boffinthetinkerer.github.io/posts/google-aiy-a-raspberrypi-and-a-scroll-phat/</link>
+      <pubDate>Wed, 25 Apr 2018 14:32:42 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/google-aiy-a-raspberrypi-and-a-scroll-phat/</guid>
+      <description>I got my RaspberryPi powered GoogleAIY box to talk nicely to both Google and a Scroll pHAT.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AdGuard on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/adguard/</link>
+    <description>Recent content in AdGuard on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 18 May 2024 17:36:40 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/adguard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt with AdGuardHome and Unbound on a SheevaPlug</title>
+      <link>https://boffinthetinkerer.github.io/posts/openwrt-with-adguardhome-and-unbound-on-a-sheevaplug/</link>
+      <pubDate>Sat, 18 May 2024 17:36:40 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/openwrt-with-adguardhome-and-unbound-on-a-sheevaplug/</guid>
+      <description>Take some OpenWrt with a dash of AdGuardHome, add a splash of Unbound and install it all on a SheevaPlug; will it be a recipe for disaster?</description>
+    </item>
+  </channel>
+</rss>

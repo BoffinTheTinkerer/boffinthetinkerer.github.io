@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RSS on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/rss/</link>
+    <description>Recent content in RSS on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 01 Oct 2024 10:06:59 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/rss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-Hosting FreshRSS</title>
+      <link>https://boffinthetinkerer.github.io/posts/self-hosting-freshrss/</link>
+      <pubDate>Tue, 01 Oct 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/self-hosting-freshrss/</guid>
+      <description>Self-Hosting FreshRSS is kind of pointless as a single user but I&amp;rsquo;m going to do it anyway. Just one more self-hosted app then I&amp;rsquo;ll stop.</description>
+    </item>
+    <item>
+      <title>Iceshrimp.NET RSS Bot</title>
+      <link>https://boffinthetinkerer.github.io/posts/iceshrimp-net-rss-bot/</link>
+      <pubDate>Tue, 16 Jul 2024 07:34:36 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/iceshrimp-net-rss-bot/</guid>
+      <description>Turn an RSS feed into an Iceshrimp note. Send either the latest RSS entry or a stream of Iceshrimp posts.</description>
+    </item>
+    <item>
+      <title>RSS to Toot</title>
+      <link>https://boffinthetinkerer.github.io/posts/rss-to-toot/</link>
+      <pubDate>Sun, 24 Sep 2023 10:55:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/rss-to-toot/</guid>
+      <description>Turn an RSS feed in to a Mastodon toot. Send either the latest RSS entry or a stream of Mastodon posts.</description>
+    </item>
+  </channel>
+</rss>

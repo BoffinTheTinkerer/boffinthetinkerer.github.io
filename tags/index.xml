@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/</link>
+    <description>Recent content in Tags on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 02 Nov 2025 17:19:10 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian</title>
+      <link>https://boffinthetinkerer.github.io/tags/debian/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>https://boffinthetinkerer.github.io/tags/hardware/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://boffinthetinkerer.github.io/tags/linux/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>https://boffinthetinkerer.github.io/tags/nginx/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://boffinthetinkerer.github.io/tags/raspberry-pi/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self Hosting</title>
+      <link>https://boffinthetinkerer.github.io/tags/self-hosting/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/self-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>https://boffinthetinkerer.github.io/tags/software/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trixie</title>
+      <link>https://boffinthetinkerer.github.io/tags/trixie/</link>
+      <pubDate>Sun, 02 Nov 2025 17:19:10 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/trixie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pi-Gen</title>
+      <link>https://boffinthetinkerer.github.io/tags/pi-gen/</link>
+      <pubDate>Sat, 01 Nov 2025 15:10:30 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/pi-gen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ACME</title>
+      <link>https://boffinthetinkerer.github.io/tags/acme/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/acme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bookworm</title>
+      <link>https://boffinthetinkerer.github.io/tags/bookworm/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/bookworm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cupboard of Forgotten Tech</title>
+      <link>https://boffinthetinkerer.github.io/tags/cupboard-of-forgotten-tech/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/cupboard-of-forgotten-tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lighttpd</title>
+      <link>https://boffinthetinkerer.github.io/tags/lighttpd/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/lighttpd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://boffinthetinkerer.github.io/tags/security/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SheevaPlug</title>
+      <link>https://boffinthetinkerer.github.io/tags/sheevaplug/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/sheevaplug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Technologies</title>
+      <link>https://boffinthetinkerer.github.io/tags/web-technologies/</link>
+      <pubDate>Sun, 19 Oct 2025 19:14:16 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/web-technologies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Think Piece</title>
+      <link>https://boffinthetinkerer.github.io/tags/think-piece/</link>
+      <pubDate>Wed, 08 Oct 2025 09:46:18 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/think-piece/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenWrt</title>
+      <link>https://boffinthetinkerer.github.io/tags/openwrt/</link>
+      <pubDate>Fri, 29 Aug 2025 15:18:52 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/openwrt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Das U-Boot</title>
+      <link>https://boffinthetinkerer.github.io/tags/das-u-boot/</link>
+      <pubDate>Mon, 21 Jul 2025 07:40:58 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/das-u-boot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google AIY</title>
+      <link>https://boffinthetinkerer.github.io/tags/google-aiy/</link>
+      <pubDate>Fri, 13 Jun 2025 23:19:28 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/google-aiy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OAuth</title>
+      <link>https://boffinthetinkerer.github.io/tags/oauth/</link>
+      <pubDate>Fri, 13 Jun 2025 23:19:28 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/oauth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://boffinthetinkerer.github.io/tags/php/</link>
+      <pubDate>Fri, 13 Jun 2025 23:19:28 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Voice HAT</title>
+      <link>https://boffinthetinkerer.github.io/tags/voice-hat/</link>
+      <pubDate>Fri, 13 Jun 2025 23:19:28 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/voice-hat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>https://boffinthetinkerer.github.io/tags/android/</link>
+      <pubDate>Thu, 22 May 2025 07:40:58 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Featured</title>
+      <link>https://boffinthetinkerer.github.io/tags/featured/</link>
+      <pubDate>Thu, 22 May 2025 07:40:58 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/featured/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Visualisation</title>
+      <link>https://boffinthetinkerer.github.io/tags/data-visualisation/</link>
+      <pubDate>Tue, 11 Feb 2025 17:23:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/data-visualisation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grafana</title>
+      <link>https://boffinthetinkerer.github.io/tags/grafana/</link>
+      <pubDate>Tue, 11 Feb 2025 17:23:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/grafana/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prometheus</title>
+      <link>https://boffinthetinkerer.github.io/tags/prometheus/</link>
+      <pubDate>Tue, 11 Feb 2025 17:23:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/prometheus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certbot</title>
+      <link>https://boffinthetinkerer.github.io/tags/certbot/</link>
+      <pubDate>Thu, 02 Jan 2025 19:21:23 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/certbot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fediverse</title>
+      <link>https://boffinthetinkerer.github.io/tags/fediverse/</link>
+      <pubDate>Thu, 02 Jan 2025 19:21:23 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/fediverse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GoToSocial</title>
+      <link>https://boffinthetinkerer.github.io/tags/gotosocial/</link>
+      <pubDate>Thu, 02 Jan 2025 19:21:23 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/gotosocial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache</title>
+      <link>https://boffinthetinkerer.github.io/tags/apache/</link>
+      <pubDate>Sun, 01 Dec 2024 11:09:39 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://boffinthetinkerer.github.io/tags/hugo/</link>
+      <pubDate>Thu, 21 Nov 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WordPress</title>
+      <link>https://boffinthetinkerer.github.io/tags/wordpress/</link>
+      <pubDate>Thu, 21 Nov 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FreshRSS</title>
+      <link>https://boffinthetinkerer.github.io/tags/freshrss/</link>
+      <pubDate>Tue, 01 Oct 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/freshrss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RSS</title>
+      <link>https://boffinthetinkerer.github.io/tags/rss/</link>
+      <pubDate>Tue, 01 Oct 2024 10:06:59 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/rss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Navidrome</title>
+      <link>https://boffinthetinkerer.github.io/tags/navidrome/</link>
+      <pubDate>Sun, 01 Sep 2024 07:02:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/navidrome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iceshrimp</title>
+      <link>https://boffinthetinkerer.github.io/tags/iceshrimp/</link>
+      <pubDate>Fri, 30 Aug 2024 08:19:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/iceshrimp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://boffinthetinkerer.github.io/tags/python/</link>
+      <pubDate>Tue, 16 Jul 2024 07:34:36 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jellyfin</title>
+      <link>https://boffinthetinkerer.github.io/tags/jellyfin/</link>
+      <pubDate>Wed, 12 Jun 2024 19:58:39 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/jellyfin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AdGuard</title>
+      <link>https://boffinthetinkerer.github.io/tags/adguard/</link>
+      <pubDate>Sat, 18 May 2024 17:36:40 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/adguard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unbound</title>
+      <link>https://boffinthetinkerer.github.io/tags/unbound/</link>
+      <pubDate>Sat, 18 May 2024 17:36:40 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/unbound/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mastodon</title>
+      <link>https://boffinthetinkerer.github.io/tags/mastodon/</link>
+      <pubDate>Wed, 20 Mar 2024 14:33:58 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/mastodon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gitea</title>
+      <link>https://boffinthetinkerer.github.io/tags/gitea/</link>
+      <pubDate>Fri, 10 Nov 2023 10:53:17 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/gitea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pi-Hole</title>
+      <link>https://boffinthetinkerer.github.io/tags/pi-hole/</link>
+      <pubDate>Sat, 07 Oct 2023 17:48:02 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PiVPN</title>
+      <link>https://boffinthetinkerer.github.io/tags/pivpn/</link>
+      <pubDate>Sat, 07 Oct 2023 17:48:02 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/pivpn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>https://boffinthetinkerer.github.io/tags/bash/</link>
+      <pubDate>Wed, 13 Sep 2023 08:10:21 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arduino</title>
+      <link>https://boffinthetinkerer.github.io/tags/arduino/</link>
+      <pubDate>Sat, 26 Aug 2023 07:31:15 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maker</title>
+      <link>https://boffinthetinkerer.github.io/tags/maker/</link>
+      <pubDate>Sat, 26 Aug 2023 07:31:15 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/maker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firefish</title>
+      <link>https://boffinthetinkerer.github.io/tags/firefish/</link>
+      <pubDate>Sat, 22 Jul 2023 15:03:57 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/firefish/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calckey</title>
+      <link>https://boffinthetinkerer.github.io/tags/calckey/</link>
+      <pubDate>Mon, 19 Jun 2023 14:37:48 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/calckey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IFTTT</title>
+      <link>https://boffinthetinkerer.github.io/tags/ifttt/</link>
+      <pubDate>Sat, 13 May 2023 11:03:24 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/ifttt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>https://boffinthetinkerer.github.io/tags/encryption/</link>
+      <pubDate>Thu, 16 Mar 2023 09:52:14 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/encryption/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geaney</title>
+      <link>https://boffinthetinkerer.github.io/tags/geaney/</link>
+      <pubDate>Thu, 16 Mar 2023 09:52:14 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/geaney/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PGP</title>
+      <link>https://boffinthetinkerer.github.io/tags/pgp/</link>
+      <pubDate>Thu, 16 Mar 2023 09:52:14 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/pgp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gemini PDA</title>
+      <link>https://boffinthetinkerer.github.io/tags/gemini-pda/</link>
+      <pubDate>Mon, 23 Jan 2023 13:25:26 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/gemini-pda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robots</title>
+      <link>https://boffinthetinkerer.github.io/tags/robots/</link>
+      <pubDate>Sat, 26 Mar 2022 11:08:01 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/robots/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gnuplot</title>
+      <link>https://boffinthetinkerer.github.io/tags/gnuplot/</link>
+      <pubDate>Fri, 13 Mar 2020 20:12:31 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/gnuplot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Picade</title>
+      <link>https://boffinthetinkerer.github.io/tags/picade/</link>
+      <pubDate>Tue, 30 Oct 2018 19:21:04 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/picade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retro Gaming</title>
+      <link>https://boffinthetinkerer.github.io/tags/retro-gaming/</link>
+      <pubDate>Tue, 30 Oct 2018 19:21:04 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/tags/retro-gaming/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

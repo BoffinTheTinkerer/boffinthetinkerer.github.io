@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mastodon on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/mastodon/</link>
+    <description>Recent content in Mastodon on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 20 Mar 2024 14:33:58 +0000</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuck Techbros</title>
+      <link>https://boffinthetinkerer.github.io/posts/fuck-techbros/</link>
+      <pubDate>Wed, 20 Mar 2024 14:33:58 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/fuck-techbros/</guid>
+      <description>Redirect their web scraping, either to a friendly URL or a not-so-friendly one. Now with a how-to on null bombs and tarpits.</description>
+    </item>
+    <item>
+      <title>RSS to Toot</title>
+      <link>https://boffinthetinkerer.github.io/posts/rss-to-toot/</link>
+      <pubDate>Sun, 24 Sep 2023 10:55:14 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/rss-to-toot/</guid>
+      <description>Turn an RSS feed in to a Mastodon toot. Send either the latest RSS entry or a stream of Mastodon posts.</description>
+    </item>
+    <item>
+      <title>Mastodon / IFTTT Bot</title>
+      <link>https://boffinthetinkerer.github.io/posts/mastodon-ifttt-bot/</link>
+      <pubDate>Sat, 13 May 2023 11:03:24 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/mastodon-ifttt-bot/</guid>
+      <description>Twitter bots were fun while they lasted but Mastodon bots can be informative and fun too.</description>
+    </item>
+    <item>
+      <title>Delete Your Mastodon Favourites</title>
+      <link>https://boffinthetinkerer.github.io/posts/delete-your-mastodon-favourites/</link>
+      <pubDate>Sun, 16 Apr 2023 16:53:29 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/delete-your-mastodon-favourites/</guid>
+      <description>Removing old posts is a trivial matter now that Mastodon allows for automated post deletions, removing old favourites is not so straighforward.</description>
+    </item>
+  </channel>
+</rss>

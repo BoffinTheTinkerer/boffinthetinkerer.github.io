@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PHP on Boffin The Tinkerer</title>
+    <link>https://boffinthetinkerer.github.io/tags/php/</link>
+    <description>Recent content in PHP on Boffin The Tinkerer</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 13 Jun 2025 23:19:28 +0100</lastBuildDate>
+    <atom:link href="https://boffinthetinkerer.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google AIY OAuth for the Voice Hat</title>
+      <link>https://boffinthetinkerer.github.io/posts/google-aiy-oauth-for-the-voice-hat/</link>
+      <pubDate>Fri, 13 Jun 2025 23:19:28 +0100</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/google-aiy-oauth-for-the-voice-hat/</guid>
+      <description>Finally got my Google AIY box talking again.</description>
+    </item>
+    <item>
+      <title>Logging the Broadband Outages</title>
+      <link>https://boffinthetinkerer.github.io/posts/logging-the-broadband-outages/</link>
+      <pubDate>Fri, 02 Feb 2024 13:21:30 +0000</pubDate>
+      <guid>https://boffinthetinkerer.github.io/posts/logging-the-broadband-outages/</guid>
+      <description>Regularly pinging a known good URL and logging the response to a .csv file to record network outages.</description>
+    </item>
+  </channel>
+</rss>
